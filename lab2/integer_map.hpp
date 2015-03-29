@@ -15,6 +15,8 @@ bool IntegerMapHasKey ( const IntegerMap & _map, int _key );
 
 int IntegerMapFindKeyPosition ( const IntegerMap & _map, int _key );
 
+int IntegerMapGet ( const IntegerMap & _map, int _key );
+
 void IntegerMapInsertKey ( IntegerMap & _map, int _key, int _value );
 
 void IntegerMapRemoveKey ( IntegerMap & _map, int _key );

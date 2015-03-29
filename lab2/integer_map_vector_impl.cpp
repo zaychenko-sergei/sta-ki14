@@ -52,6 +52,15 @@ int IntegerMapFindKeyPosition ( const IntegerMap & _map, int _key )
 }
 
 
+int IntegerMapGet ( const IntegerMap & _map, int _key )
+{
+    int keyPosition = IntegerMapFindKeyPosition( _map, _key );
+	if ( keyPosition != -1 )
+	    return _map.m_values.m_pData[ keyPosition ];
+	else
+	    return -1;
+}
+
 bool IntegerMapHasKey ( const IntegerMap & _map, int _key )
 {
     return IntegerMapFindKeyPosition( _map, _key ) != -1;
