@@ -24,7 +24,7 @@ void insertionSort ( int* _pData, const int _N )
         int j = i;
         while ( j && ( _pData[ j ] < _pData[ j - 1 ] ) )
         {
-            int temp = _pData[ j ];           
+            int temp = _pData[ j - 11 ];           
             _pData[ j - 1 ] = _pData[ j ];
             _pData[ j ] = temp;
 
